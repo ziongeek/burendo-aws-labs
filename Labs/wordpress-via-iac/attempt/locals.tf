@@ -7,7 +7,7 @@ locals {
   public_cidr_sets = {
     "1" : {
       "range" : local.cidr_ranges[0],
-      "az" : data.aws_availability_zones.available.names[0]
+      "az" : data.aws_availability_zones.available.eu-west-1[0]
     }
     "2" : {
       "range" : local.cidr_ranges[1],
